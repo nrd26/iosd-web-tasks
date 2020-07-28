@@ -15,17 +15,17 @@ input[type=text], input[type=password] {
   border-radius: 50px;
 }
 
-.thin{
-    padding-right: 100px;
-    padding-left: 100px;
-}
+/*.thin{
+    margin-right: 40px;
+    margin-left: 40px;
+}*/
 
 button[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 7px 10px;
   margin: 8px 0;
-  border: none;
+  /*border: none;*/
   cursor: pointer;
   width: 100%;
   border-radius: 50px;
@@ -38,10 +38,10 @@ button:hover {
 
 
 .left{
-    float: left;
+  float: left;
   width: 50%;
-  padding: 250px;
-  height: 300px; 
+  padding-left:150px;
+  padding-top:300px; 
 } 
 
 .right{
@@ -56,11 +56,29 @@ button:hover {
   justify-content: space-around;
   height: 70vh;
 }
-/*.block{
-    border-radius: 50px;
-}*/
+
 
 .left,.right{
   width: 46vw;
 }
  
+
+@media only screen and (max-width: 1600px){
+    img {
+        display: inline-block;
+        flex-basis: 50%;
+        padding-left: 50px;
+
+    }
+    .right {
+        flex-basis: 50%;
+    }
+    form {
+        width: 150%;
+    }
+    input {
+        font-size: 0.5vw;
+    }
+}
+
+
