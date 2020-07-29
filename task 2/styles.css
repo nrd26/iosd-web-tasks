@@ -1,0 +1,48 @@
+body {
+    background-image: linear-gradient(to bottom, #a6c0fe, #f68084);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.sidebar {
+  height: 100%; 
+  border-right: solid;
+  border-width: 2px;
+  width: 150px; 
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  top: 0; /* Stay at the top */
+  left: 0;/*Stay at the left*/
+  background-color: #f68084;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #828282;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #fff;
+}
+
+.text {
+  padding-left: 170px;
+}
+
+@media screen and (max-height: 820px) {
+  .sidebar {
+  	padding-top: 15px;
+  	width:100px;
+  }
+  .sidebar a {
+  	font-size: 20px;
+  }
+
+  .text{
+  	padding-left: 120px;
+  }
+}

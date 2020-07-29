@@ -1,0 +1,96 @@
+body{
+    background-image: linear-gradient(to bottom, #a6c0fe, #f68084);
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+
+.thin{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 7px 10px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 50px;
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.left{
+  float: left;
+  width: 50%;
+} 
+
+.right{
+    float: left;
+  width: 50%;
+  /*padding: 250px;*/
+  padding-top: 50px;
+  height: 300px; 
+} 
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  height: 70vh;
+}
+
+
+.left,.right{
+  width: 5vw;
+}
+ 
+
+@media only screen and (max-width: 1024px){
+    img {
+        display: inline-block;
+        flex-basis: 50%;
+        padding-left: 90px;
+        padding-top: 10px;
+
+    }
+    .right {
+        flex-basis: 80%;
+        margin-top: 150px;
+        font-size: 20px;
+    }
+    form {
+        width: 100%;
+    }
+    input {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+
+  form{
+    width: 350%;
+    padding-top: 135px;
+  }
+  img{
+    padding-top: 250px;
+    
+  }
+}
