@@ -1,48 +1,58 @@
-body {
+#sidebar {
+    width: 50px;
     background-image: linear-gradient(to bottom, #a6c0fe, #f68084);
-    background-attachment: fixed;
-    background-size: cover;
+    min-height: 100vh;
+    position: fixed;
+    transition: width 0.5s ease-out;
+    display: block;
+}
+.main {
+    display: flex;
+}
+#toggle {
+    width: 50px;
+    height: 50px;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+.bar {
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    border-radius: 2px;
+}
+#links {
+    display: none;
+}
+#text {
+    z-index: -1;
+    margin-left: 70px;
+}
+#sidebar.open{
+    width: 200px;
+}
+#links.open {
+    display: block;
 }
 
-.sidebar {
-  height: 100%; 
-  border-right: solid;
-  border-width: 2px;
-  width: 150px; 
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  top: 0; /* Stay at the top */
-  left: 0;/*Stay at the left*/
-  background-color: #f68084;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-}
-
-.sidebar a {
+#links a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #828282;
+  color: white;
   display: block;
 }
 
-.sidebar a:hover {
-  color: #fff;
+#links a:hover {
+  color: black;
 }
-
-.text {
-  padding-left: 170px;
-}
-
-@media screen and (max-height: 820px) {
-  .sidebar {
-  	padding-top: 15px;
-  	width:100px;
-  }
-  .sidebar a {
-  	font-size: 20px;
-  }
-
-  .text{
-  	padding-left: 120px;
-  }
+@media only screen and (max-width: 992px){
+    #sidebar{
+        position: fixed;
+        display: block;
+    }
 }
