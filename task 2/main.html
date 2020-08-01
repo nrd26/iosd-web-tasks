@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>IOSD</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
 </head>
 <body>
-	<div class="sidebar">
-		<a href="#home">Home</a>
-  		<a href="#blog">Blog</a>
-  		<a href="#about">About</a>
-  		<a href="#contact">Contact Us</a>
-	</div>
-	<div class="text">
-		<h2>Hi this is Nihal, Welcome to my blog</h2>
-		<p>Manipal is a locality of Udupi, located 5 kilometres from the centre of the city in Udupi district of the state of Karnataka in India and is administered by the Udupi City Municipality. It is located in the part of Coastal Karnataka, 62.8 kms. north of Mangalore and 8 km east of the Arabian Sea.</p>
-		<p>Manipal is home to the Manipal Academy of Higher Education and lures students from different places. This town is famous for a number of attractions as well. End Point Park, Planetarium, Manipal Museum of Anatomy and Pathology, Hasta Shilpa Heritage Village, Manipal Lake and more are must-visit places.</p>
-		<p>Stay tuned for more blog posts</p>
-		
-	</div>
+    <div class="main">
+        <div id="sidebar">
+            <button id="toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+            <div id="links">
+                <a href="#home">Home</a>
+                <a href="#blog">Blog</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+        <div class="container" id="text">
+            <div class="row">
+                <h2>Hi this is Nihal, Welcome to my blog</h2>
+                <p>Manipal is a locality of Udupi, located 5 kilometres from the centre of the city in Udupi district of the state of Karnataka in India and is administered by the Udupi City Municipality. It is located in the part of Coastal Karnataka, 62.8 kms. north of Mangalore and 8 km east of the Arabian Sea.</p>
+                <p>Manipal is home to the Manipal Academy of Higher Education and lures students from different places. This town is famous for a number of attractions as well. End Point Park, Planetarium, Manipal Museum of Anatomy and Pathology, Hasta Shilpa Heritage Village, Manipal Lake and more are must-visit places.</p>
+                <p>Stay tuned for more blog posts</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const links = document.getElementById('links');
+        function toggleBar(){
+            if(sidebar.classList.contains('open')){
+                links.classList.remove('open');
+                sidebar.classList.remove('open');
+            }
+            else{
+                sidebar.classList.add('open');
+                sidebar.addEventListener('transitionend',() => sidebar.classList.contains('open') && links.classList.add('open'));
+            }
+        }
+        document.getElementById('toggle').addEventListener('click',toggleBar);
+    </script>
 </body>
+</html>
