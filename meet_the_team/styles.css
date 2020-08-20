@@ -1,0 +1,285 @@
+html {
+  box-sizing: border-box;
+}
+
+.con {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.centered {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.con .centered h1 {
+  font-weight: bolder;
+  font-size: 70px;
+}
+
+
+
+h1{
+  text-align: center;
+}
+
+.row {
+  padding: 0 250px 0 250px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 20px 8px;
+  padding-left: 40px;
+ }
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+ background-image: linear-gradient(to left, #a6c0fe, #f68084);
+}
+
+.container {
+  padding: 0 16px;
+  text-align: center;
+  color: white;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: black;
+}
+
+.teams{
+  width: 100%;
+  padding-top:100px;
+  padding-bottom: 100px;
+  padding-left:250px;
+  padding-right:250px;
+}
+
+img{
+  border-radius: 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 650px) {
+
+.con .centered h1 {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.teams{
+  width: 100%;
+  height: 250px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+  .column {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+    padding-top: 20px;
+  }
+
+  .row{
+    padding: 0;
+  }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 800px) {
+
+  .con .centered h1 {
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+  .teams{
+  width: 110%;
+  height: 550px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  padding-left:220px;
+  padding-right: 0;
+  
+}
+
+  .column {
+    width: 200%;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+    padding-top: 20px;
+  }
+
+  h1{
+      padding-left: 300px;
+  }
+
+  p{
+    width:100%;
+    padding-right: 250px;
+  }
+
+  .name{
+    width:100%;
+    padding-right: 250px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1500px) {
+
+
+  .overlay {
+  position: absolute;
+  top: 590px;
+  bottom: 0;
+  left:275px;
+  right: 0;
+  height: 47.5%;
+  width: 10%;
+  opacity: 0;
+  transition: .3s ease;
+  background-image: linear-gradient(to left, #a6c0fe, #f68084);
+  border-radius: 20px;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.card:hover .overlay {
+  opacity: 0.8;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  width: 30px;
+  font-size: 30px;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /*text-align: center;*/
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #eee;
+}
+
+
+
+
+
+  .teams{
+  width: 110%;
+  height: 550px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  padding-left:150px;
+  padding-right: 220px;
+  
+}
+
+  .column {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+    padding-top: 20px;
+  }
+
+  h1{
+      /*padding-left: 100px;*/
+  }
+
+  p{
+    width:50%;
+    padding-right: 0;
+  }
+
+  .name{
+    width:50%;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1501px){
+
+.overlay {
+  position: absolute;
+  top: 1030px;
+  bottom: 0;
+  left:275px;
+  right: 0;
+  height: 38%;
+  width: 5%;
+  opacity: 0;
+  transition: .3s ease;
+  background-image: linear-gradient(to left, #a6c0fe, #f68084);
+  border-radius: 20px;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.card:hover .overlay {
+  opacity: 0.8;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  width: 30px;
+  font-size: 30px;
+  position: relative;
+  top: 50%;
+  /*transform: translate(-50%, -50%);*/
+  /*-ms-transform: translate(-50%, -50%);*/
+  /*text-align: center;*/
+
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #eee;
+}
+
+
+
+
+
+  p{
+    width:100%;
+    padding-right: 850px;
+  }
+  .name{
+    width:100%;
+    padding-right: 850px;
+  }
+}
+
+
+
