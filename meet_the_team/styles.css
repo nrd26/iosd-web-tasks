@@ -5,7 +5,7 @@ html {
 .con {
   position: relative;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .centered {
@@ -24,6 +24,7 @@ html {
 
 h1{
   text-align: center;
+  font-size: x-large;
 }
 
 .row {
@@ -44,10 +45,13 @@ h1{
 
 
 
+
 .card {
+  overflow: hidden;
+  /*position: relative;*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
- background-image: linear-gradient(to left, #a6c0fe, #f68084);
+  background-color: white;
 }
 
 .container {
@@ -63,15 +67,21 @@ h1{
 }
 
 .title {
+  color: green;
+}
+
+.text{
+  color: grey;
+}
+
+.name{
   color: black;
 }
 
 .teams{
-  width: 100%;
-  padding-top:100px;
+  width: auto;
   padding-bottom: 100px;
-  padding-left:250px;
-  padding-right:250px;
+  border-radius: 0;
 }
 
 img{
@@ -79,10 +89,268 @@ img{
 }
 
 
+/*NAVBAR*/
+header{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    width: 100vw;
+    border-bottom:100px solid grey;
+    border-width:0.1vh ;
+    padding-bottom: 0%;
+    padding-top: 1%;
+    z-index: 1 ;
+   
+}
+.nav-links{
+    flex: 2;
+}
+.nav-links > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link{
+    position: relative;
+}
+.nav-link > a{
+    line-height: 3rem;
+    color:grey;
+    padding: 0 .8rem;
+    letter-spacing: 1px;
+    font-size: .95rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+}
+.nav-link:hover > a{
+    transform: scale(1.1);
+    text-decoration: none;
+    color:  #45a049;
+}
+
+@keyframes animation{
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/*NAVBAR*/
 
 
 
+/*MOBILE PHONES*/
 @media screen and (max-width: 650px) {
+
+
+  .card:hover .overlay{
+  right: 0;
+  width: 96%;
+  opacity: 0.8;
+}
+
+.card:hover .overlay2{
+  right: 0;
+  width: 96%;
+  opacity: 0.8;
+}
+.card:hover .overlay3{
+  right: 0;
+  width: 96%;
+  opacity: 0.8;
+}
+.card:hover .overlay4{
+  right: 0;
+  width: 96%;
+  opacity: 0.8;
+}
+.card:hover .overlay5{
+  right: 0;
+  width: 96%;
+  opacity: 0.8;
+}
+.card:hover .overlay6{
+  right: 0;
+  width: 96%;
+  opacity: 0.8;
+}
+.card:hover .overlay7{
+  right: 0;
+  width: 96%;
+  opacity: 0.8;
+}
+.card:hover .overlay8{
+  right: 0;
+  width: 96%;
+  opacity: 0.8;
+}
+
+  .overlay {
+    margin-left: 30px;
+  position: absolute;
+  top: 363px;
+  /*bottom: 0;*/
+  right:0;
+  /*left:275px;*/
+  left: -9px;
+  height: 63%;
+  /*width: 96%;*/
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay2 {
+  position: absolute;
+  top: 960px;
+  /*bottom: 0;*/
+   left: 25px;
+  right: 0;
+  height: 63%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.overlay3 {
+  position: absolute;
+  top: 1560px;
+  /*bottom: 0;*/
+  left:21px;
+  right: 0;
+  height: 63%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.overlay4 {
+  position: absolute;
+  top: 2160px;
+  /*bottom: 0;*/
+  left:23px;
+  right: 0;
+  height: 63%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay5 {
+  position: absolute;
+  top: 2760px;
+  bottom: 0;
+  left:21px;
+  right: 0;
+  height: 63%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay6 {
+  position: absolute;
+  top: 3360px;
+  bottom: 0;
+  left:21px;
+  right: 0;
+  height: 63%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.overlay7 {
+  position: absolute;
+  top: 3960px;
+  bottom: 0;
+  left:21px;
+  right: 0;
+  height: 63%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay8 {
+  position: absolute;
+  top: 4560px;
+  bottom: 0;
+  left:21px;
+  right: 0;
+  height: 63%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.icon {
+  color: white;
+  width: 30px;
+  font-size: 30px;
+  position: relative;
+  top: 50%;
+
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+
+
+
+
 
 .con .centered h1 {
   font-weight: bolder;
@@ -90,18 +358,15 @@ img{
 }
 
 .teams{
-  width: 100%;
+  width: auto;
   height: 250px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left:10px;
-  padding-right:10px;
+  border-radius: 0;
 }
 
   .column {
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: auto;
     display: block;
     padding-top: 20px;
   }
@@ -112,7 +377,212 @@ img{
 
 }
 
+/*MOBILE PHONES*/
+
+/*IPAD*/
+
 @media screen and (min-width: 767px) and (max-width: 800px) {
+
+
+  .card:hover .overlay{
+  right: 0;
+  width: 68%;
+  opacity: 0.8;
+}
+
+.card:hover .overlay2{
+  right: 0;
+  width: 68%;
+  opacity: 0.8;
+}
+.card:hover .overlay3{
+  right: 0;
+  width: 68%;
+  opacity: 0.8;
+}
+.card:hover .overlay4{
+ right: 0;
+  width: 68%;
+  opacity: 0.8;
+}
+.card:hover .overlay5{
+  right: 0;
+  width: 68%;
+  opacity: 0.8;
+}
+.card:hover .overlay6{
+  right: 0;
+  width: 68%;
+  opacity: 0.8;
+}
+.card:hover .overlay7{
+  right: 0;
+  width: 68%;
+  opacity: 0.8;
+}
+.card:hover .overlay8{
+  right: 0;
+  width: 68%;
+  opacity: 0.8;
+}
+
+  .overlay {
+  /*margin-left: 30px;*/
+  position: absolute;
+  top: 790px;
+  /*bottom: 0;*/
+  right:0;
+  /*left:275px;*/
+  left: 190px;
+  height: 59%;
+  /*width: 96%;*/
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay2 {
+  position: absolute;
+  top: 1575px;
+  /*bottom: 0;*/
+   left: 190px;
+  right: 0;
+  height: 59%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.overlay3 {
+  position: absolute;
+  top: 2355px;
+  /*bottom: 0;*/
+  left:190px;
+  right: 0;
+  height: 59%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.overlay4 {
+  position: absolute;
+  top: 3140px;
+  /*bottom: 0;*/
+  left:190px;
+  right: 0;
+  height: 59%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay5 {
+  position: absolute;
+  top: 3920px;
+  bottom: 0;
+  left:190px;
+  right: 0;
+  height: 59%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay6 {
+  position: absolute;
+  top: 4705px;
+  bottom: 0;
+  left:190px;
+  right: 0;
+  height: 59%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.overlay7 {
+  position: absolute;
+  top: 5490px;
+  bottom: 0;
+  left:190px;
+  right: 0;
+  height: 59%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay8 {
+  position: absolute;
+  top: 6270px;
+  bottom: 0;
+  left:190px;
+  right: 0;
+  height: 59%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.icon {
+  color: white;
+  width: 30px;
+  font-size: 30px;
+  position: relative;
+  top: 50%;
+
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+
+
 
   .con .centered h1 {
   font-weight: bolder;
@@ -120,12 +590,14 @@ img{
 }
 
   .teams{
-  width: 110%;
-  height: 550px;
+  width: 940px;
+  height: 650px;
   padding-top: 50px;
   padding-bottom: 10px;
-  padding-left:220px;
+  padding-left:0;
   padding-right: 0;
+  margin-right: 0; 
+  border-radius: 0;
   
 }
 
@@ -135,10 +607,11 @@ img{
     padding-right: 40px;
     display: block;
     padding-top: 20px;
+    margin-left:-80px;
   }
 
   h1{
-      padding-left: 300px;
+      margin-left: 550px;
   }
 
   p{
@@ -151,42 +624,196 @@ img{
     padding-right: 250px;
   }
 }
+/*IPAD*/
+
+/*IPAD PRO*/
 
 @media screen and (min-width: 801px) and (max-width: 1500px) {
 
 
-  .overlay {
-  position: absolute;
-  top: 590px;
-  bottom: 0;
-  left:275px;
+  .card:hover .overlay{
   right: 0;
-  height: 47.5%;
-  width: 10%;
-  opacity: 0;
-  transition: .3s ease;
-  background-image: linear-gradient(to left, #a6c0fe, #f68084);
-  border-radius: 20px;
-}
-
-/* When you mouse over the container, fade in the overlay icon*/
-.card:hover .overlay {
+  width: 46.5%;
   opacity: 0.8;
 }
 
-/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.card:hover .overlay2{
+  right: 0;
+  width: 46.5%;
+  opacity: 0.8;
+}
+.card:hover .overlay3{
+ right: 0;
+  width: 46.5%;
+  opacity: 0.8;
+}
+.card:hover .overlay4{
+right: 0;
+  width: 46.5%;
+  opacity: 0.8;
+}
+.card:hover .overlay5{
+ right: 0;
+  width: 46.5%;
+  opacity: 0.8;
+}
+.card:hover .overlay6{
+ right: 0;
+  width: 46.5%;
+  opacity: 0.8;
+}
+.card:hover .overlay7{
+  right: 0;
+  width: 46.5%;
+  opacity: 0.8;
+}
+.card:hover .overlay8{
+  right: 0;
+  width: 46.5%;
+  opacity: 0.8;
+}
+
+  .overlay {
+  position: absolute;
+  top: 690px;
+  right:0;
+  left: 275px;
+  height: 41%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay2 {
+  position: absolute;
+  top: 1425px;
+   left: 275px;
+  right: 0;
+  height: 41%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.overlay3 {
+  position: absolute;
+  top: 2162px;
+   left: 275px;
+  right: 0;
+  height: 40.5%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.overlay4 {
+  position: absolute;
+  top: 2895px;
+   left: 275px;
+  right: 0;
+  height: 40.5%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay5 {
+  position: absolute;
+  top: 3630px;
+   left: 275px;
+  right: 0;
+  height: 40.5%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay6 {
+  position: absolute;
+  top: 4360px;
+   left: 275px;
+  right: 0;
+  height: 41%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.overlay7 {
+  position: absolute;
+  top: 5090px;
+   left: 275px;
+  right: 0;
+  height: 41%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay8 {
+  position: absolute;
+  top: 5825px;
+   left: 275px;
+  right: 0;
+  height: 41%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
 .icon {
   color: white;
   width: 30px;
   font-size: 30px;
   position: relative;
   top: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  /*text-align: center;*/
-}
 
-/* When you move the mouse over the icon, change color */
+}
 .fa-user:hover {
   color: #eee;
 }
@@ -195,8 +822,10 @@ img{
 
 
 
+
+
   .teams{
-  width: 110%;
+  width: auto;
   height: 550px;
   padding-top: 50px;
   padding-bottom: 10px;
@@ -213,10 +842,6 @@ img{
     padding-top: 20px;
   }
 
-  h1{
-      /*padding-left: 100px;*/
-  }
-
   p{
     width:50%;
     padding-right: 0;
@@ -228,50 +853,219 @@ img{
   }
 }
 
+/*IPAD PRO*/
+
+/*NORMAL LAPTOP SCREEN(only overlay part)*/
+
 @media screen and (min-width: 1501px){
+
+
+.card:hover .overlay{
+  right: 0;
+  width: 16.3%;
+  opacity: 0.8;
+}
+
+.card:hover .overlay2{
+  right: 0;
+  width: 16.3%;
+  opacity: 0.8;
+}
+.card:hover .overlay3{
+  right: 0;
+  width: 16.3%;
+  opacity: 0.8;
+}
+.card:hover .overlay4{
+  right: 0;
+  width: 16.3%;
+  opacity: 0.8;
+}
+.card:hover .overlay5{
+  right: 0;
+  width: 16.3%;
+  opacity: 0.8;
+}
+.card:hover .overlay6{
+  right: 0;
+  width: 16.3%;
+  opacity: 0.8;
+}
+.card:hover .overlay7{
+  right: 0;
+  width: 16.3%;
+  opacity: 0.8;
+}
+.card:hover .overlay8{
+  right: 0;
+  width: 16.3%;
+  opacity: 0.8;
+}
+
+
+
+
+
 
 .overlay {
   position: absolute;
-  top: 1030px;
+  top: 1330px;
   bottom: 0;
   left:275px;
   right: 0;
   height: 38%;
   width: 5%;
   opacity: 0;
-  transition: .3s ease;
-  background-image: linear-gradient(to left, #a6c0fe, #f68084);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
   border-radius: 20px;
+
+  z-index: 1;
 }
 
-/* When you mouse over the container, fade in the overlay icon*/
-.card:hover .overlay {
-  opacity: 0.8;
+
+.overlay2 {
+  position: absolute;
+  top: 1330px;
+  bottom: 0;
+  left:635px;
+  right: 0;
+  height: 38%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
 }
 
-/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+
+
+.overlay3 {
+  position: absolute;
+  top: 1330px;
+  bottom: 0;
+  left:993px;
+  right: 0;
+  height: 38%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+
+.overlay4 {
+  position: absolute;
+  top: 1330px;
+  bottom: 0;
+  left:1350px;
+  right: 0;
+  height: 38%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+
+.overlay5 {
+  position: absolute;
+  top: 1893px;
+  bottom: 0;
+  left:275px;
+  right: 0;
+  height: 38%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+.overlay6 {
+  position: absolute;
+  top: 1893px;
+  bottom: 0;
+  left:635px;
+  right: 0;
+  height: 38%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay7 {
+  position: absolute;
+  top: 1893px;
+  bottom: 0;
+  left:993px;
+  right: 0;
+  height: 38%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
+
+.overlay8 {
+  position: absolute;
+  top: 1893px;
+  bottom: 0;
+  left:1350px;
+  right: 0;
+  height: 38%;
+  width: 5%;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  border-radius: 20px;
+
+  z-index: 1;
+}
+
 .icon {
   color: white;
   width: 30px;
   font-size: 30px;
   position: relative;
   top: 50%;
-  /*transform: translate(-50%, -50%);*/
-  /*-ms-transform: translate(-50%, -50%);*/
-  /*text-align: center;*/
 
 }
 
-/* When you move the mouse over the icon, change color */
 .fa-user:hover {
   color: #eee;
 }
 
-
-
-
-
-  p{
+p{
     width:100%;
     padding-right: 850px;
   }
@@ -281,5 +1075,6 @@ img{
   }
 }
 
+/*NORMAL LAPTOP SCREEN(only overlay part)*/
 
 
